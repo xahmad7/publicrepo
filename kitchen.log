@@ -1,0 +1,153 @@
+I, [2022-03-17T16:35:08.498647 #137861]  INFO -- Kitchen: -----> Starting Kitchen (v1.9.0)
+I, [2022-03-17T16:35:08.654492 #137861]  INFO -- Kitchen: -----> Creating <default-ubuntu-1404>...
+I, [2022-03-17T16:35:08.659931 #137861]  INFO -- Kitchen: -----> Creating <default-centos-72>...
+E, [2022-03-17T16:35:08.666161 #137861] ERROR -- Kitchen: ------Exception-------
+E, [2022-03-17T16:35:08.666209 #137861] ERROR -- Kitchen: Class: Kitchen::ActionFailed
+E, [2022-03-17T16:35:08.666231 #137861] ERROR -- Kitchen: Message: 2 actions failed.
+E, [2022-03-17T16:35:08.666248 #137861] ERROR -- Kitchen: ----------------------
+E, [2022-03-17T16:35:08.666265 #137861] ERROR -- Kitchen: ------Backtrace-------
+E, [2022-03-17T16:35:08.666281 #137861] ERROR -- Kitchen: /var/lib/gems/2.7.0/gems/test-kitchen-1.9.0/lib/kitchen/command.rb:179:in `run_action'
+E, [2022-03-17T16:35:08.666297 #137861] ERROR -- Kitchen: /var/lib/gems/2.7.0/gems/test-kitchen-1.9.0/lib/kitchen/command/action.rb:39:in `block in call'
+E, [2022-03-17T16:35:08.666313 #137861] ERROR -- Kitchen: /usr/lib/ruby/2.7.0/benchmark.rb:293:in `measure'
+E, [2022-03-17T16:35:08.666329 #137861] ERROR -- Kitchen: /var/lib/gems/2.7.0/gems/test-kitchen-1.9.0/lib/kitchen/command/action.rb:37:in `call'
+E, [2022-03-17T16:35:08.666345 #137861] ERROR -- Kitchen: /var/lib/gems/2.7.0/gems/test-kitchen-1.9.0/lib/kitchen/cli.rb:56:in `perform'
+E, [2022-03-17T16:35:08.666361 #137861] ERROR -- Kitchen: /var/lib/gems/2.7.0/gems/test-kitchen-1.9.0/lib/kitchen/cli.rb:180:in `block (2 levels) in <class:CLI>'
+E, [2022-03-17T16:35:08.666377 #137861] ERROR -- Kitchen: /var/lib/gems/2.7.0/gems/thor-0.19.1/lib/thor/command.rb:27:in `run'
+E, [2022-03-17T16:35:08.666393 #137861] ERROR -- Kitchen: /var/lib/gems/2.7.0/gems/thor-0.19.1/lib/thor/invocation.rb:126:in `invoke_command'
+E, [2022-03-17T16:35:08.666408 #137861] ERROR -- Kitchen: /var/lib/gems/2.7.0/gems/test-kitchen-1.9.0/lib/kitchen/cli.rb:321:in `invoke_task'
+E, [2022-03-17T16:35:08.666424 #137861] ERROR -- Kitchen: /var/lib/gems/2.7.0/gems/thor-0.19.1/lib/thor.rb:359:in `dispatch'
+E, [2022-03-17T16:35:08.666439 #137861] ERROR -- Kitchen: /var/lib/gems/2.7.0/gems/thor-0.19.1/lib/thor/base.rb:440:in `start'
+E, [2022-03-17T16:35:08.666458 #137861] ERROR -- Kitchen: /var/lib/gems/2.7.0/gems/test-kitchen-1.9.0/bin/kitchen:13:in `block in <top (required)>'
+E, [2022-03-17T16:35:08.666474 #137861] ERROR -- Kitchen: /var/lib/gems/2.7.0/gems/test-kitchen-1.9.0/lib/kitchen/errors.rb:174:in `with_friendly_errors'
+E, [2022-03-17T16:35:08.666489 #137861] ERROR -- Kitchen: /var/lib/gems/2.7.0/gems/test-kitchen-1.9.0/bin/kitchen:13:in `<top (required)>'
+E, [2022-03-17T16:35:08.666505 #137861] ERROR -- Kitchen: /usr/local/bin/kitchen:23:in `load'
+E, [2022-03-17T16:35:08.666521 #137861] ERROR -- Kitchen: /usr/local/bin/kitchen:23:in `<main>'
+E, [2022-03-17T16:35:08.666536 #137861] ERROR -- Kitchen: ----End Backtrace-----
+E, [2022-03-17T16:35:08.666551 #137861] ERROR -- Kitchen: -Composite Exception--
+E, [2022-03-17T16:35:08.666567 #137861] ERROR -- Kitchen: Class: Kitchen::ActionFailed
+E, [2022-03-17T16:35:08.666582 #137861] ERROR -- Kitchen: Message: Failed to complete #create action: [uninitialized constant Kitchen::Driver::Vagrant::SecureRandom
+Did you mean?  SecurityError] on default-ubuntu-1404
+E, [2022-03-17T16:35:08.666640 #137861] ERROR -- Kitchen: ----------------------
+E, [2022-03-17T16:35:08.666656 #137861] ERROR -- Kitchen: ------Backtrace-------
+E, [2022-03-17T16:35:08.666672 #137861] ERROR -- Kitchen: (erb):95:in `render_template'
+E, [2022-03-17T16:35:08.666724 #137861] ERROR -- Kitchen: /usr/lib/ruby/2.7.0/erb.rb:905:in `eval'
+E, [2022-03-17T16:35:08.666740 #137861] ERROR -- Kitchen: /usr/lib/ruby/2.7.0/erb.rb:905:in `result'
+E, [2022-03-17T16:35:08.666753 #137861] ERROR -- Kitchen: /var/lib/gems/2.7.0/gems/kitchen-vagrant-1.11.0/lib/kitchen/driver/vagrant.rb:417:in `render_template'
+E, [2022-03-17T16:35:08.666765 #137861] ERROR -- Kitchen: /var/lib/gems/2.7.0/gems/kitchen-vagrant-1.11.0/lib/kitchen/driver/vagrant.rb:284:in `block in create_vagrantfile'
+E, [2022-03-17T16:35:08.666785 #137861] ERROR -- Kitchen: /var/lib/gems/2.7.0/gems/kitchen-vagrant-1.11.0/lib/kitchen/driver/vagrant.rb:284:in `open'
+E, [2022-03-17T16:35:08.666799 #137861] ERROR -- Kitchen: /var/lib/gems/2.7.0/gems/kitchen-vagrant-1.11.0/lib/kitchen/driver/vagrant.rb:284:in `create_vagrantfile'
+E, [2022-03-17T16:35:08.666812 #137861] ERROR -- Kitchen: /var/lib/gems/2.7.0/gems/kitchen-vagrant-1.11.0/lib/kitchen/driver/vagrant.rb:115:in `create'
+E, [2022-03-17T16:35:08.666824 #137861] ERROR -- Kitchen: /var/lib/gems/2.7.0/gems/test-kitchen-1.9.0/lib/kitchen/instance.rb:449:in `public_send'
+E, [2022-03-17T16:35:08.666836 #137861] ERROR -- Kitchen: /var/lib/gems/2.7.0/gems/test-kitchen-1.9.0/lib/kitchen/instance.rb:449:in `block in perform_action'
+E, [2022-03-17T16:35:08.666849 #137861] ERROR -- Kitchen: /var/lib/gems/2.7.0/gems/test-kitchen-1.9.0/lib/kitchen/instance.rb:510:in `block in synchronize_or_call'
+E, [2022-03-17T16:35:08.666863 #137861] ERROR -- Kitchen: /var/lib/gems/2.7.0/gems/test-kitchen-1.9.0/lib/kitchen/instance.rb:508:in `synchronize'
+E, [2022-03-17T16:35:08.666875 #137861] ERROR -- Kitchen: /var/lib/gems/2.7.0/gems/test-kitchen-1.9.0/lib/kitchen/instance.rb:508:in `synchronize_or_call'
+E, [2022-03-17T16:35:08.666892 #137861] ERROR -- Kitchen: /var/lib/gems/2.7.0/gems/test-kitchen-1.9.0/lib/kitchen/instance.rb:478:in `block in action'
+E, [2022-03-17T16:35:08.666906 #137861] ERROR -- Kitchen: /usr/lib/ruby/2.7.0/benchmark.rb:293:in `measure'
+E, [2022-03-17T16:35:08.666919 #137861] ERROR -- Kitchen: /var/lib/gems/2.7.0/gems/test-kitchen-1.9.0/lib/kitchen/instance.rb:477:in `action'
+E, [2022-03-17T16:35:08.666931 #137861] ERROR -- Kitchen: /var/lib/gems/2.7.0/gems/test-kitchen-1.9.0/lib/kitchen/instance.rb:449:in `perform_action'
+E, [2022-03-17T16:35:08.666944 #137861] ERROR -- Kitchen: /var/lib/gems/2.7.0/gems/test-kitchen-1.9.0/lib/kitchen/instance.rb:359:in `create_action'
+E, [2022-03-17T16:35:08.666956 #137861] ERROR -- Kitchen: /var/lib/gems/2.7.0/gems/test-kitchen-1.9.0/lib/kitchen/instance.rb:348:in `block in transition_to'
+E, [2022-03-17T16:35:08.666968 #137861] ERROR -- Kitchen: /var/lib/gems/2.7.0/gems/test-kitchen-1.9.0/lib/kitchen/instance.rb:347:in `each'
+E, [2022-03-17T16:35:08.666981 #137861] ERROR -- Kitchen: /var/lib/gems/2.7.0/gems/test-kitchen-1.9.0/lib/kitchen/instance.rb:347:in `transition_to'
+E, [2022-03-17T16:35:08.666993 #137861] ERROR -- Kitchen: /var/lib/gems/2.7.0/gems/test-kitchen-1.9.0/lib/kitchen/instance.rb:127:in `create'
+E, [2022-03-17T16:35:08.667006 #137861] ERROR -- Kitchen: /var/lib/gems/2.7.0/gems/test-kitchen-1.9.0/lib/kitchen/command.rb:194:in `public_send'
+E, [2022-03-17T16:35:08.667018 #137861] ERROR -- Kitchen: /var/lib/gems/2.7.0/gems/test-kitchen-1.9.0/lib/kitchen/command.rb:194:in `run_action_in_thread'
+E, [2022-03-17T16:35:08.667030 #137861] ERROR -- Kitchen: /var/lib/gems/2.7.0/gems/test-kitchen-1.9.0/lib/kitchen/command.rb:173:in `block (2 levels) in run_action'
+E, [2022-03-17T16:35:08.667042 #137861] ERROR -- Kitchen: ----End Backtrace-----
+E, [2022-03-17T16:35:08.667054 #137861] ERROR -- Kitchen: ---Nested Exception---
+E, [2022-03-17T16:35:08.667066 #137861] ERROR -- Kitchen: Class: Kitchen::ActionFailed
+E, [2022-03-17T16:35:08.667077 #137861] ERROR -- Kitchen: Message: Failed to complete #create action: [uninitialized constant Kitchen::Driver::Vagrant::SecureRandom
+Did you mean?  SecurityError]
+E, [2022-03-17T16:35:08.667090 #137861] ERROR -- Kitchen: ----------------------
+E, [2022-03-17T16:35:08.667102 #137861] ERROR -- Kitchen: ------Backtrace-------
+E, [2022-03-17T16:35:08.667113 #137861] ERROR -- Kitchen: (erb):95:in `render_template'
+E, [2022-03-17T16:35:08.667125 #137861] ERROR -- Kitchen: /usr/lib/ruby/2.7.0/erb.rb:905:in `eval'
+E, [2022-03-17T16:35:08.667137 #137861] ERROR -- Kitchen: /usr/lib/ruby/2.7.0/erb.rb:905:in `result'
+E, [2022-03-17T16:35:08.667149 #137861] ERROR -- Kitchen: /var/lib/gems/2.7.0/gems/kitchen-vagrant-1.11.0/lib/kitchen/driver/vagrant.rb:417:in `render_template'
+E, [2022-03-17T16:35:08.667161 #137861] ERROR -- Kitchen: /var/lib/gems/2.7.0/gems/kitchen-vagrant-1.11.0/lib/kitchen/driver/vagrant.rb:284:in `block in create_vagrantfile'
+E, [2022-03-17T16:35:08.667177 #137861] ERROR -- Kitchen: /var/lib/gems/2.7.0/gems/kitchen-vagrant-1.11.0/lib/kitchen/driver/vagrant.rb:284:in `open'
+E, [2022-03-17T16:35:08.667190 #137861] ERROR -- Kitchen: /var/lib/gems/2.7.0/gems/kitchen-vagrant-1.11.0/lib/kitchen/driver/vagrant.rb:284:in `create_vagrantfile'
+E, [2022-03-17T16:35:08.667229 #137861] ERROR -- Kitchen: /var/lib/gems/2.7.0/gems/kitchen-vagrant-1.11.0/lib/kitchen/driver/vagrant.rb:115:in `create'
+E, [2022-03-17T16:35:08.667243 #137861] ERROR -- Kitchen: /var/lib/gems/2.7.0/gems/test-kitchen-1.9.0/lib/kitchen/instance.rb:449:in `public_send'
+E, [2022-03-17T16:35:08.667255 #137861] ERROR -- Kitchen: /var/lib/gems/2.7.0/gems/test-kitchen-1.9.0/lib/kitchen/instance.rb:449:in `block in perform_action'
+E, [2022-03-17T16:35:08.667267 #137861] ERROR -- Kitchen: /var/lib/gems/2.7.0/gems/test-kitchen-1.9.0/lib/kitchen/instance.rb:510:in `block in synchronize_or_call'
+E, [2022-03-17T16:35:08.667279 #137861] ERROR -- Kitchen: /var/lib/gems/2.7.0/gems/test-kitchen-1.9.0/lib/kitchen/instance.rb:508:in `synchronize'
+E, [2022-03-17T16:35:08.667291 #137861] ERROR -- Kitchen: /var/lib/gems/2.7.0/gems/test-kitchen-1.9.0/lib/kitchen/instance.rb:508:in `synchronize_or_call'
+E, [2022-03-17T16:35:08.667303 #137861] ERROR -- Kitchen: /var/lib/gems/2.7.0/gems/test-kitchen-1.9.0/lib/kitchen/instance.rb:478:in `block in action'
+E, [2022-03-17T16:35:08.667323 #137861] ERROR -- Kitchen: /usr/lib/ruby/2.7.0/benchmark.rb:293:in `measure'
+E, [2022-03-17T16:35:08.667334 #137861] ERROR -- Kitchen: /var/lib/gems/2.7.0/gems/test-kitchen-1.9.0/lib/kitchen/instance.rb:477:in `action'
+E, [2022-03-17T16:35:08.667345 #137861] ERROR -- Kitchen: /var/lib/gems/2.7.0/gems/test-kitchen-1.9.0/lib/kitchen/instance.rb:449:in `perform_action'
+E, [2022-03-17T16:35:08.667356 #137861] ERROR -- Kitchen: /var/lib/gems/2.7.0/gems/test-kitchen-1.9.0/lib/kitchen/instance.rb:359:in `create_action'
+E, [2022-03-17T16:35:08.667367 #137861] ERROR -- Kitchen: /var/lib/gems/2.7.0/gems/test-kitchen-1.9.0/lib/kitchen/instance.rb:348:in `block in transition_to'
+E, [2022-03-17T16:35:08.667378 #137861] ERROR -- Kitchen: /var/lib/gems/2.7.0/gems/test-kitchen-1.9.0/lib/kitchen/instance.rb:347:in `each'
+E, [2022-03-17T16:35:08.667389 #137861] ERROR -- Kitchen: /var/lib/gems/2.7.0/gems/test-kitchen-1.9.0/lib/kitchen/instance.rb:347:in `transition_to'
+E, [2022-03-17T16:35:08.667400 #137861] ERROR -- Kitchen: /var/lib/gems/2.7.0/gems/test-kitchen-1.9.0/lib/kitchen/instance.rb:127:in `create'
+E, [2022-03-17T16:35:08.667413 #137861] ERROR -- Kitchen: /var/lib/gems/2.7.0/gems/test-kitchen-1.9.0/lib/kitchen/command.rb:194:in `public_send'
+E, [2022-03-17T16:35:08.667425 #137861] ERROR -- Kitchen: /var/lib/gems/2.7.0/gems/test-kitchen-1.9.0/lib/kitchen/command.rb:194:in `run_action_in_thread'
+E, [2022-03-17T16:35:08.667436 #137861] ERROR -- Kitchen: /var/lib/gems/2.7.0/gems/test-kitchen-1.9.0/lib/kitchen/command.rb:173:in `block (2 levels) in run_action'
+E, [2022-03-17T16:35:08.667447 #137861] ERROR -- Kitchen: ----End Backtrace-----
+E, [2022-03-17T16:35:08.667458 #137861] ERROR -- Kitchen: -Composite Exception--
+E, [2022-03-17T16:35:08.667468 #137861] ERROR -- Kitchen: Class: Kitchen::ActionFailed
+E, [2022-03-17T16:35:08.667479 #137861] ERROR -- Kitchen: Message: Failed to complete #create action: [uninitialized constant Kitchen::Driver::Vagrant::SecureRandom
+Did you mean?  SecurityError] on default-centos-72
+E, [2022-03-17T16:35:08.667490 #137861] ERROR -- Kitchen: ----------------------
+E, [2022-03-17T16:35:08.667500 #137861] ERROR -- Kitchen: ------Backtrace-------
+E, [2022-03-17T16:35:08.667511 #137861] ERROR -- Kitchen: (erb):95:in `render_template'
+E, [2022-03-17T16:35:08.667522 #137861] ERROR -- Kitchen: /usr/lib/ruby/2.7.0/erb.rb:905:in `eval'
+E, [2022-03-17T16:35:08.667533 #137861] ERROR -- Kitchen: /usr/lib/ruby/2.7.0/erb.rb:905:in `result'
+E, [2022-03-17T16:35:08.667544 #137861] ERROR -- Kitchen: /var/lib/gems/2.7.0/gems/kitchen-vagrant-1.11.0/lib/kitchen/driver/vagrant.rb:417:in `render_template'
+E, [2022-03-17T16:35:08.667562 #137861] ERROR -- Kitchen: /var/lib/gems/2.7.0/gems/kitchen-vagrant-1.11.0/lib/kitchen/driver/vagrant.rb:284:in `block in create_vagrantfile'
+E, [2022-03-17T16:35:08.667575 #137861] ERROR -- Kitchen: /var/lib/gems/2.7.0/gems/kitchen-vagrant-1.11.0/lib/kitchen/driver/vagrant.rb:284:in `open'
+E, [2022-03-17T16:35:08.667586 #137861] ERROR -- Kitchen: /var/lib/gems/2.7.0/gems/kitchen-vagrant-1.11.0/lib/kitchen/driver/vagrant.rb:284:in `create_vagrantfile'
+E, [2022-03-17T16:35:08.667597 #137861] ERROR -- Kitchen: /var/lib/gems/2.7.0/gems/kitchen-vagrant-1.11.0/lib/kitchen/driver/vagrant.rb:115:in `create'
+E, [2022-03-17T16:35:08.667608 #137861] ERROR -- Kitchen: /var/lib/gems/2.7.0/gems/test-kitchen-1.9.0/lib/kitchen/instance.rb:449:in `public_send'
+E, [2022-03-17T16:35:08.667620 #137861] ERROR -- Kitchen: /var/lib/gems/2.7.0/gems/test-kitchen-1.9.0/lib/kitchen/instance.rb:449:in `block in perform_action'
+E, [2022-03-17T16:35:08.667631 #137861] ERROR -- Kitchen: /var/lib/gems/2.7.0/gems/test-kitchen-1.9.0/lib/kitchen/instance.rb:510:in `block in synchronize_or_call'
+E, [2022-03-17T16:35:08.667642 #137861] ERROR -- Kitchen: /var/lib/gems/2.7.0/gems/test-kitchen-1.9.0/lib/kitchen/instance.rb:508:in `synchronize'
+E, [2022-03-17T16:35:08.667653 #137861] ERROR -- Kitchen: /var/lib/gems/2.7.0/gems/test-kitchen-1.9.0/lib/kitchen/instance.rb:508:in `synchronize_or_call'
+E, [2022-03-17T16:35:08.667664 #137861] ERROR -- Kitchen: /var/lib/gems/2.7.0/gems/test-kitchen-1.9.0/lib/kitchen/instance.rb:478:in `block in action'
+E, [2022-03-17T16:35:08.667675 #137861] ERROR -- Kitchen: /usr/lib/ruby/2.7.0/benchmark.rb:293:in `measure'
+E, [2022-03-17T16:35:08.667686 #137861] ERROR -- Kitchen: /var/lib/gems/2.7.0/gems/test-kitchen-1.9.0/lib/kitchen/instance.rb:477:in `action'
+E, [2022-03-17T16:35:08.667698 #137861] ERROR -- Kitchen: /var/lib/gems/2.7.0/gems/test-kitchen-1.9.0/lib/kitchen/instance.rb:449:in `perform_action'
+E, [2022-03-17T16:35:08.667709 #137861] ERROR -- Kitchen: /var/lib/gems/2.7.0/gems/test-kitchen-1.9.0/lib/kitchen/instance.rb:359:in `create_action'
+E, [2022-03-17T16:35:08.667720 #137861] ERROR -- Kitchen: /var/lib/gems/2.7.0/gems/test-kitchen-1.9.0/lib/kitchen/instance.rb:348:in `block in transition_to'
+E, [2022-03-17T16:35:08.667731 #137861] ERROR -- Kitchen: /var/lib/gems/2.7.0/gems/test-kitchen-1.9.0/lib/kitchen/instance.rb:347:in `each'
+E, [2022-03-17T16:35:08.667764 #137861] ERROR -- Kitchen: /var/lib/gems/2.7.0/gems/test-kitchen-1.9.0/lib/kitchen/instance.rb:347:in `transition_to'
+E, [2022-03-17T16:35:08.667775 #137861] ERROR -- Kitchen: /var/lib/gems/2.7.0/gems/test-kitchen-1.9.0/lib/kitchen/instance.rb:127:in `create'
+E, [2022-03-17T16:35:08.667786 #137861] ERROR -- Kitchen: /var/lib/gems/2.7.0/gems/test-kitchen-1.9.0/lib/kitchen/command.rb:194:in `public_send'
+E, [2022-03-17T16:35:08.667797 #137861] ERROR -- Kitchen: /var/lib/gems/2.7.0/gems/test-kitchen-1.9.0/lib/kitchen/command.rb:194:in `run_action_in_thread'
+E, [2022-03-17T16:35:08.667808 #137861] ERROR -- Kitchen: /var/lib/gems/2.7.0/gems/test-kitchen-1.9.0/lib/kitchen/command.rb:173:in `block (2 levels) in run_action'
+E, [2022-03-17T16:35:08.667819 #137861] ERROR -- Kitchen: ----End Backtrace-----
+E, [2022-03-17T16:35:08.667830 #137861] ERROR -- Kitchen: ---Nested Exception---
+E, [2022-03-17T16:35:08.667840 #137861] ERROR -- Kitchen: Class: Kitchen::ActionFailed
+E, [2022-03-17T16:35:08.667851 #137861] ERROR -- Kitchen: Message: Failed to complete #create action: [uninitialized constant Kitchen::Driver::Vagrant::SecureRandom
+Did you mean?  SecurityError]
+E, [2022-03-17T16:35:08.667862 #137861] ERROR -- Kitchen: ----------------------
+E, [2022-03-17T16:35:08.667873 #137861] ERROR -- Kitchen: ------Backtrace-------
+E, [2022-03-17T16:35:08.667884 #137861] ERROR -- Kitchen: (erb):95:in `render_template'
+E, [2022-03-17T16:35:08.667895 #137861] ERROR -- Kitchen: /usr/lib/ruby/2.7.0/erb.rb:905:in `eval'
+E, [2022-03-17T16:35:08.667906 #137861] ERROR -- Kitchen: /usr/lib/ruby/2.7.0/erb.rb:905:in `result'
+E, [2022-03-17T16:35:08.667920 #137861] ERROR -- Kitchen: /var/lib/gems/2.7.0/gems/kitchen-vagrant-1.11.0/lib/kitchen/driver/vagrant.rb:417:in `render_template'
+E, [2022-03-17T16:35:08.667932 #137861] ERROR -- Kitchen: /var/lib/gems/2.7.0/gems/kitchen-vagrant-1.11.0/lib/kitchen/driver/vagrant.rb:284:in `block in create_vagrantfile'
+E, [2022-03-17T16:35:08.667943 #137861] ERROR -- Kitchen: /var/lib/gems/2.7.0/gems/kitchen-vagrant-1.11.0/lib/kitchen/driver/vagrant.rb:284:in `open'
+E, [2022-03-17T16:35:08.667955 #137861] ERROR -- Kitchen: /var/lib/gems/2.7.0/gems/kitchen-vagrant-1.11.0/lib/kitchen/driver/vagrant.rb:284:in `create_vagrantfile'
+E, [2022-03-17T16:35:08.667966 #137861] ERROR -- Kitchen: /var/lib/gems/2.7.0/gems/kitchen-vagrant-1.11.0/lib/kitchen/driver/vagrant.rb:115:in `create'
+E, [2022-03-17T16:35:08.667977 #137861] ERROR -- Kitchen: /var/lib/gems/2.7.0/gems/test-kitchen-1.9.0/lib/kitchen/instance.rb:449:in `public_send'
+E, [2022-03-17T16:35:08.667988 #137861] ERROR -- Kitchen: /var/lib/gems/2.7.0/gems/test-kitchen-1.9.0/lib/kitchen/instance.rb:449:in `block in perform_action'
+E, [2022-03-17T16:35:08.667999 #137861] ERROR -- Kitchen: /var/lib/gems/2.7.0/gems/test-kitchen-1.9.0/lib/kitchen/instance.rb:510:in `block in synchronize_or_call'
+E, [2022-03-17T16:35:08.668010 #137861] ERROR -- Kitchen: /var/lib/gems/2.7.0/gems/test-kitchen-1.9.0/lib/kitchen/instance.rb:508:in `synchronize'
+E, [2022-03-17T16:35:08.668021 #137861] ERROR -- Kitchen: /var/lib/gems/2.7.0/gems/test-kitchen-1.9.0/lib/kitchen/instance.rb:508:in `synchronize_or_call'
+E, [2022-03-17T16:35:08.668032 #137861] ERROR -- Kitchen: /var/lib/gems/2.7.0/gems/test-kitchen-1.9.0/lib/kitchen/instance.rb:478:in `block in action'
+E, [2022-03-17T16:35:08.668043 #137861] ERROR -- Kitchen: /usr/lib/ruby/2.7.0/benchmark.rb:293:in `measure'
+E, [2022-03-17T16:35:08.668053 #137861] ERROR -- Kitchen: /var/lib/gems/2.7.0/gems/test-kitchen-1.9.0/lib/kitchen/instance.rb:477:in `action'
+E, [2022-03-17T16:35:08.668064 #137861] ERROR -- Kitchen: /var/lib/gems/2.7.0/gems/test-kitchen-1.9.0/lib/kitchen/instance.rb:449:in `perform_action'
+E, [2022-03-17T16:35:08.668076 #137861] ERROR -- Kitchen: /var/lib/gems/2.7.0/gems/test-kitchen-1.9.0/lib/kitchen/instance.rb:359:in `create_action'
+E, [2022-03-17T16:35:08.668087 #137861] ERROR -- Kitchen: /var/lib/gems/2.7.0/gems/test-kitchen-1.9.0/lib/kitchen/instance.rb:348:in `block in transition_to'
+E, [2022-03-17T16:35:08.668098 #137861] ERROR -- Kitchen: /var/lib/gems/2.7.0/gems/test-kitchen-1.9.0/lib/kitchen/instance.rb:347:in `each'
+E, [2022-03-17T16:35:08.668109 #137861] ERROR -- Kitchen: /var/lib/gems/2.7.0/gems/test-kitchen-1.9.0/lib/kitchen/instance.rb:347:in `transition_to'
+E, [2022-03-17T16:35:08.668120 #137861] ERROR -- Kitchen: /var/lib/gems/2.7.0/gems/test-kitchen-1.9.0/lib/kitchen/instance.rb:127:in `create'
+E, [2022-03-17T16:35:08.668131 #137861] ERROR -- Kitchen: /var/lib/gems/2.7.0/gems/test-kitchen-1.9.0/lib/kitchen/command.rb:194:in `public_send'
+E, [2022-03-17T16:35:08.668142 #137861] ERROR -- Kitchen: /var/lib/gems/2.7.0/gems/test-kitchen-1.9.0/lib/kitchen/command.rb:194:in `run_action_in_thread'
+E, [2022-03-17T16:35:08.668197 #137861] ERROR -- Kitchen: /var/lib/gems/2.7.0/gems/test-kitchen-1.9.0/lib/kitchen/command.rb:173:in `block (2 levels) in run_action'
+E, [2022-03-17T16:35:08.668209 #137861] ERROR -- Kitchen: ----End Backtrace-----
